@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "vue.volar",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "alefragnani.bookmarks",
+        "editorconfig.editorconfig",
+        "cpylua.language-postcss"
+    ]
+}
