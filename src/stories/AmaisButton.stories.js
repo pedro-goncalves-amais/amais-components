@@ -1,7 +1,7 @@
 import AmaisButton from "../../src/components/AmaisButton.vue";
 
 export default {
-    title: "Amais/Button",
+    title: "amais-components/Button",
     component: AmaisButton,
 };
 
