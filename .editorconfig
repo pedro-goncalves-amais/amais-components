@@ -1,6 +1,6 @@
 root = true
 
-[*]
+[*.{js,cjs,dist,json,jsx,ts,tsx,vue}]
 charset = utf-8
 end_of_line = crlf
 indent_size = 4
@@ -8,3 +8,5 @@ indent_style = space
 insert_final_newline = false
 max_line_length = 80
 trim_trailing_whitespace = true
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties

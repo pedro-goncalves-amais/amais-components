@@ -1,0 +1,19 @@
+{
+    // Experimental
+    "editor.experimental.stickyScroll.enabled": true,
+
+    // Formatters
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+
+    // Themes
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "Cascadia Mono",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": true,
+
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.persistentSessionReviveProcess": "never"
+}
