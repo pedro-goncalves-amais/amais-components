@@ -2,7 +2,8 @@ module.exports = {
     env: {
         node: true,
     },
-    extends: ["eslint:recommended", "plugin:vue/vue3-recommended"],
+    extends: ["plugin:vue/vue3-recommended", "prettier"],
+    parser: "vue-eslint-parser",
     rules: {
         // https://eslint.vuejs.org/rules/vue/html-indent
         "vue/html-indent": [
