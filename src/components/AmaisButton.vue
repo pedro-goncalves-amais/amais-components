@@ -65,13 +65,16 @@
         @apply relative;
 
         .content {
+            @apply h-full;
             @apply transition-opacity;
             @apply opacity-100;
+
+            @apply flex flex-row items-center justify-between gap-2;
         }
 
         &.primary {
             @apply bg-amais-500 hover:bg-amais-400 active:bg-amais-300;
-            @apply text-white;
+            @apply text-white fill-white;
 
             &.disabled {
                 @apply bg-amais-100;
@@ -80,7 +83,7 @@
 
         &.primary.inverse {
             @apply bg-white hover:bg-amais-100 active:bg-white;
-            @apply text-amais-500;
+            @apply text-amais-500 fill-amais-500;
 
             &.loading {
                 @apply bg-white hover:bg-white active:bg-white;
@@ -99,7 +102,7 @@
 
         &.secondary {
             @apply bg-transparent hover:bg-amais-500 active:bg-amais-100;
-            @apply text-amais-500 hover:text-white active:text-amais-500;
+            @apply text-amais-500 fill-amais-500 hover:text-white hover:fill-white active:text-amais-500 active:fill-amais-500;
             @apply border-amais-500 active:border-amais-500;
 
             &.loading {
@@ -121,7 +124,7 @@
 
         &.secondary.inverse {
             @apply bg-transparent hover:bg-white active:bg-white;
-            @apply text-white hover:text-amais-500 active:text-amais-500;
+            @apply text-white fill-white hover:text-amais-500 hover:fill-amais-500 active:text-amais-500 active:fill-amais-500;
             @apply border-white hover:border-white active:border-white;
 
             &.loading {
