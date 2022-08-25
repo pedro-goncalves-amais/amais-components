@@ -9,7 +9,8 @@ module.exports = {
             colors: {
                 ...defaultTailwindColors,
                 amais: {
-                    200: "#d4a3ff",
+                    100: "#d4a3ff",
+                    200: "#9d4de1",
                     300: "#9d2bff",
                     400: "#8025ff",
                     500: "#7200d3",

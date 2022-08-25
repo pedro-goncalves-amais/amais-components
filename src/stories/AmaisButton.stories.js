@@ -24,5 +24,19 @@ const Template = args => ({
 export const Primary = Template.bind({});
 Primary.args = {
     primary: true,
-    defaultSlot: "<b>aaaaaa</b>",
+    secondary: false,
+    inverse: false,
+    disabled: false,
+    loading: false,
+    defaultSlot: "Button",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+    primary: false,
+    secondary: true,
+    inverse: false,
+    disabled: false,
+    loading: false,
+    defaultSlot: "Button",
 };
