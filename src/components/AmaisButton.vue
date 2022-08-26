@@ -68,7 +68,6 @@
             @apply h-full;
             @apply transition-opacity;
             @apply opacity-100;
-
             @apply flex flex-row items-center justify-between gap-2;
         }
 
@@ -116,9 +115,9 @@
             }
 
             &.disabled {
-                @apply hover:bg-transparent;
-                @apply text-amais-100;
-                @apply border-amais-100;
+                @apply bg-transparent hover:bg-transparent active:bg-transparent;
+                @apply text-amais-100 fill-amais-100 hover:text-amais-100 hover:fill-amais-100 active:text-amais-100 active:fill-amais-100;
+                @apply border-amais-100 hover:border-amais-100 active:border-amais-100;
             }
         }
 
@@ -134,7 +133,7 @@
 
             &.disabled {
                 @apply bg-transparent hover:bg-transparent active:bg-transparent;
-                @apply text-amais-100 hover:text-amais-100 active:text-amais-100;
+                @apply text-amais-100 fill-amais-100 hover:text-amais-100 hover:fill-amais-100 active:text-amais-100 active:fill-amais-100;
                 @apply border-amais-100 hover:border-amais-100 active:border-amais-100;
             }
         }

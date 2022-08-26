@@ -5,7 +5,7 @@
     import ComponentShowcase from "./pages/ComponentShowcase.vue";
 
     export default {
-        name: "App",
+        name: "Buttons",
         components: {
             ComponentShowcase,
             AmaisButton,

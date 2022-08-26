@@ -16,20 +16,20 @@
     .component-showcase {
         @apply w-screen h-screen p-10;
         @apply bg-white;
-        @apply grid grid-rows-1 grid-cols-3 gap-5;
+        @apply grid grid-rows-1 grid-cols-3;
         grid-template-areas: "component component controls";
 
         .component-container {
             @apply p-5;
             @apply bg-gray-100;
-            @apply border border-gray-300 rounded-xl;
+            @apply border border-gray-300;
             @apply flex justify-center items-center;
             grid-area: component;
         }
 
         .controls-container {
             @apply p-5;
-            @apply border border-gray-300 rounded-xl;
+            @apply border border-gray-300;
         }
     }
 </style>
