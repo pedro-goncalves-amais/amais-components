@@ -1,44 +1,45 @@
 {
-  "name": "amais-components",
-  "version": "0.0.16",
-  "private": false,
-  "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "preview": "vite preview",
-    "publish:patch": "npm run build && npm version patch && npm publish",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "main": "./dist/amais-components.umd.cjs",
-  "module": "./dist/amais-components.js",
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": {
-      "import": "./dist/amais-components.js",
-      "require": "./dist/amais-components.umd.cjs"
+    "name": "amais-components",
+    "version": "0.0.16",
+    "private": false,
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "preview": "vite preview",
+        "publish:patch": "npm run build && npm version patch && npm publish",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+    },
+    "main": "./dist/amais-components.umd.cjs",
+    "module": "./dist/amais-components.js",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        ".": {
+            "import": "./dist/amais-components.js",
+            "require": "./dist/amais-components.umd.cjs"
+        }
+    },
+    "type": "module",
+    "dependencies": {
+        "@babel/core": "^7.18.13",
+        "@vitejs/plugin-vue": "^3.0.3",
+        "autoprefixer": "^10.4.8",
+        "babel-loader": "^8.2.5",
+        "daisyui": "^2.24.0",
+        "eslint": "^8.22.0",
+        "eslint-plugin-vue": "^9.4.0",
+        "postcss": "^8.4.16",
+        "postcss-import": "^14.1.0",
+        "prettier": "^2.7.1",
+        "tailwindcss": "^3.1.8",
+        "v-wave": "^1.5.0",
+        "vite": "^3.0.7",
+        "vite-plugin-svg-icons": "^2.0.1",
+        "vue": "^3.2.37",
+        "vue-eslint-parser": "^9.0.3",
+        "vue-loader": "^16.8.3"
     }
-  },
-  "type": "module",
-  "devDependencies": {
-    "@babel/core": "^7.18.13",
-    "@vitejs/plugin-vue": "^3.0.3",
-    "autoprefixer": "^10.4.8",
-    "babel-loader": "^8.2.5",
-    "daisyui": "^2.24.0",
-    "eslint": "^8.22.0",
-    "eslint-plugin-vue": "^9.4.0",
-    "postcss": "^8.4.16",
-    "postcss-import": "^14.1.0",
-    "prettier": "^2.7.1",
-    "tailwindcss": "^3.1.8",
-    "v-wave": "^1.5.0",
-    "vite": "^3.0.7",
-    "vite-plugin-svg-icons": "^2.0.1",
-    "vue": "^3.2.37",
-    "vue-eslint-parser": "^9.0.3",
-    "vue-loader": "^16.8.3"
-  }
 }
+
