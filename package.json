@@ -1,6 +1,6 @@
 {
     "name": "amais-components",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "private": false,
     "scripts": {
         "build": "vite build",
@@ -42,4 +42,3 @@
         "vue-loader": "^16.8.3"
     }
 }
-
