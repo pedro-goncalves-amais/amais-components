@@ -22,7 +22,7 @@
         }
     },
     "type": "module",
-    "dependencies": {
+    "peerDependencies": {
         "@babel/core": "^7.18.13",
         "@vitejs/plugin-vue": "^3.0.3",
         "autoprefixer": "^10.4.8",
