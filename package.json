@@ -6,7 +6,7 @@
         "build": "vite build",
         "dev": "vite",
         "preview": "vite preview",
-        "publish:patch": "npm run build && npm version patch && npm publish",
+        "publish:patch": "git add . && git commit -m \"Publishing to npm\" && git push && npm run build && npm version patch && npm publish",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
     },
