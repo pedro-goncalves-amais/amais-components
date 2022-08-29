@@ -4,9 +4,11 @@
     "private": false,
     "scripts": {
         "build": "vite build",
+        "build:git": "git add . && git commit -m \"Publishing to npm\" && git push",
+        "build:icons": "copyfiles -u 3 \"src/assets/icons/*.svg\" \"dist/icons\"",
         "dev": "vite",
         "preview": "vite preview",
-        "publish:patch": "git add . && git commit -m \"Publishing to npm\" && git push && npm run build && npm version patch && npm publish",
+        "publish:patch": "npm run build:git && npm run build && npm run build:icons && npm run build:patch && npm version patch && npm publish",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
     },
@@ -27,6 +29,7 @@
         "@vitejs/plugin-vue": "^3.0.3",
         "autoprefixer": "^10.4.8",
         "babel-loader": "^8.2.5",
+        "copyfiles": "^2.4.1",
         "daisyui": "^2.24.0",
         "eslint": "^8.22.0",
         "eslint-plugin-vue": "^9.4.0",
