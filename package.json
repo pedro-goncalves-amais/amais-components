@@ -8,7 +8,7 @@
         "build:icons": "copyfiles -u 3 \"src/assets/icons/*.svg\" \"dist/icons\"",
         "dev": "vite",
         "preview": "vite preview",
-        "publish:patch": "npm run build:git -- && npm run build && npm run build:icons && npm run build:patch && npm version patch && npm publish",
+        "publish:patch": "npm run build:git -- && npm run build && npm run build:icons && npm version patch && npm publish",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
     },
