@@ -35,7 +35,7 @@ export default defineConfig({
         vue(),
         createSvgIconsPlugin({
             // Specify the icon folder to be cached
-            iconDirs: [path.resolve(process.cwd(), "src/assets/icons")],
+            iconDirs: [path.resolve(process.cwd(), "dist/icons")],
             // Specify symbolId format
             symbolId: "[name]",
             /**
