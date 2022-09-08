@@ -1,7 +1,6 @@
 <script setup>
     import { computed } from "vue";
     import { useClasses } from "@/composables/useClasses";
-    import AmaisIcon from "@/components/AmaisIcon.vue";
 
     const props = defineProps({
         clearable: {
@@ -40,7 +39,7 @@
 
     const classes = computed(() => {
         return useClasses([
-            "amais-text-field",
+            "amais-input",
             props.clearable ? "clearable" : "",
             props.error ? "error" : "",
             props.modelValue ? "" : "empty",
@@ -75,7 +74,7 @@
 </template>
 
 <style lang="postcss" scoped>
-    .amais-text-field {
+    .amais-input {
         @apply relative block w-full;
 
         .label {
