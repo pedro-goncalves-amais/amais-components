@@ -1,40 +1,33 @@
-<script>
-    import AmaisButton from "./components/AmaisButton.vue";
-    import AmaisIcon from "./components/AmaisIcon.vue";
+<script setup>
+    import { computed, ref } from "vue";
+    import AmaisTextField from "./components/AmaisTextField.vue";
     import AmaisSwitch from "./components/AmaisSwitch.vue";
     import ComponentShowcase from "./pages/ComponentShowcase.vue";
+    import AmaisIcon from "./components/AmaisIcon.vue";
 
-    export default {
-        name: "App",
-        components: {
-            ComponentShowcase,
-            AmaisButton,
-            AmaisIcon,
-            AmaisSwitch,
-        },
-        data: () => ({
-            primary: true,
-            secondary: false,
-            inverse: false,
-            loading: false,
-            disabled: false,
-        }),
-    };
+    const primary = ref(false);
+    const value = ref("Es");
+    const errorMessage = ref("O valor deve conter no mínimo 4 caracteres.");
+    const error = ref(false);
 </script>
 
 <template>
     <ComponentShowcase>
         <template #component>
-            <AmaisButton
-                :primary="primary"
-                :secondary="secondary"
-                :inverse="inverse"
-                :loading="loading"
-                :disabled="disabled"
+            <AmaisTextField
+                label="teste"
+                :error="error"
+                :error-message="errorMessage"
+                v-model="value"
             >
-                <AmaisIcon name="IconLike" />
-                teste
-            </AmaisButton>
+                <template #append-icon>
+                    <AmaisIcon
+                        class="cursor-pointer"
+                        name="IconBook"
+                        @click="value = undefined"
+                    />
+                </template>
+            </AmaisTextField>
         </template>
 
         <template #controls>
@@ -43,20 +36,8 @@
                 v-model="primary"
             />
             <AmaisSwitch
-                label="secondary"
-                v-model="secondary"
-            />
-            <AmaisSwitch
-                label="inverse"
-                v-model="inverse"
-            />
-            <AmaisSwitch
-                label="loading"
-                v-model="loading"
-            />
-            <AmaisSwitch
-                label="disabled"
-                v-model="disabled"
+                label="error"
+                v-model="error"
             />
         </template>
     </ComponentShowcase>

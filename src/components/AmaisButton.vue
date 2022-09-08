@@ -1,4 +1,5 @@
 <script>
+    import { useClasses } from "@/composables/useClasses";
     export default {
         name: "AmaisButton",
         props: {
@@ -25,14 +26,14 @@
         },
         computed: {
             classes() {
-                return [
+                return useClasses([
                     "amais-button",
                     this.primary ? "primary" : "",
                     this.secondary ? "secondary" : "",
                     this.inverse ? "inverse" : "",
                     this.disabled ? "disabled" : "",
                     this.loading ? "loading" : "",
-                ].join(" ");
+                ]);
             },
         },
     };
